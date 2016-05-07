@@ -5,10 +5,10 @@ Provides additional features like sensitivity to pointer-lock.
 ```javascript
 import lock from 'pointer-lock-plus';
 
-this.pointer = lock({
+const pointer = lock({
   element: canvas,
-  sensitivity: 0.002,
-  onData: (dx, dy) => {
+  sensitivity: 0.0015,
+  onData(dx, dy) {
     console.log(dx);
     console.log(dy);
   },
